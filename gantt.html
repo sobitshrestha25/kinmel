@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kinmel Sequential Gantt Chart</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gantt {
+    display: grid;
+    grid-template-columns: 220px repeat(12, 1fr);
+    gap: 4px;
+}
+
+/* Header */
+.header {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Task label */
+.task {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+}
+
+/* Empty cell */
+.cell {
+    height: 40px;
+    border: 1px solid #eee;
+    position: relative;
+}
+
+/* Gantt bar */
+.bar {
+    height: 100%;
+    border-radius: 4px;
+}
+
+/* Colors */
+.phase1 { background: #4caf50; }
+.phase2 { background: #2196f3; }
+.phase3 { background: #ff9800; }
+.phase4 { background: #9c27b0; }
+.phase5 { background: #f44336; }
+.phase6 { background: #607d8b; }
+</style>
+</head>
+
+<body>
+
+<h2>Kinmel Project Gantt Chart (Sequential - 12 Weeks)</h2>
+
+<div class="gantt">
+
+<!-- HEADER -->
+<div class="header">Tasks</div>
+<div class="header">W1</div><div class="header">W2</div><div class="header">W3</div>
+<div class="header">W4</div><div class="header">W5</div><div class="header">W6</div>
+<div class="header">W7</div><div class="header">W8</div><div class="header">W9</div>
+<div class="header">W10</div><div class="header">W11</div><div class="header">W12</div>
+
+<!-- PHASE 1 -->
+<div class="task">Planning & Research</div>
+<div class="cell"><div class="bar phase1"></div></div>
+<div class="cell"><div class="bar phase1"></div></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div>
+
+<!-- PHASE 2 -->
+<div class="task">UI/UX Design</div>
+<div class="cell"></div><div class="cell"></div>
+<div class="cell"><div class="bar phase2"></div></div>
+<div class="cell"><div class="bar phase2"></div></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div>
+
+<!-- PHASE 3 -->
+<div class="task">Frontend Development</div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div>
+<div class="cell"><div class="bar phase3"></div></div>
+<div class="cell"><div class="bar phase3"></div></div>
+<div class="cell"><div class="bar phase3"></div></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div>
+
+<!-- PHASE 4 -->
+<div class="task">Backend Development</div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div>
+<div class="cell"><div class="bar phase4"></div></div>
+<div class="cell"><div class="bar phase4"></div></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+
+<!-- PHASE 5 -->
+<div class="task">Testing & QA</div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"><div class="bar phase5"></div></div>
+<div class="cell"><div class="bar phase5"></div></div>
+<div class="cell"></div>
+
+<!-- PHASE 6 -->
+<div class="task">Deployment</div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div><div class="cell"></div><div class="cell"></div>
+<div class="cell"></div>
+<div class="cell"></div>
+<div class="cell"><div class="bar phase6"></div></div>
+
+</div>
+
+</body>
+</html>
